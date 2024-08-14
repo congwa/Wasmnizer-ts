@@ -22,7 +22,7 @@
     "build": "npx tsc && npm run build:lib",
     "release": "npx tsc -p tsconfig.release.json && npm run build:lib",
     "build:lib": "node scripts/copy_lib_files.js build && build:rollup",
-    "build:rollup": "rollup build/cli/ts2wasm.js --file build/cli/ts2wasm.min.js --format cjs"
+    "build:rollup": "rollup build/cli/ts2wasm.js --file build/cli/ts2wasm.min.js --format esm"
   },
   "repository": {
     "type": "git",
